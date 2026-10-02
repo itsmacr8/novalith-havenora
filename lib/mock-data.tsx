@@ -62,19 +62,22 @@ const SERVICES: IService[] = [
     id: 'real-estate',
     title: 'Ready Apartments',
     imageSrc: '/images/flat.png',
-    imageAlt: 'Explore completed flats available for sale in your preferred area.',
+    imageAlt:
+      'Explore completed flats available for sale in your preferred area.',
   },
   {
     id: 'project-management',
     title: 'Shared Land Ownership',
     imageSrc: '/images/land.png',
-    imageAlt: 'Purchase land with a group and choose whether to build independently or with a developer.',
+    imageAlt:
+      'Purchase land with a group and choose whether to build independently or with a developer.',
   },
   {
     id: 'investment',
     title: 'Land for Sale',
     imageSrc: '/images/land-share.png',
-    imageAlt: 'Buy land individually or as a group, with no apartment development commitment.',
+    imageAlt:
+      'Buy land individually or as a group, with no apartment development commitment.',
   },
 ];
 
@@ -138,6 +141,75 @@ const DEFAULT_CONTACT_REASONS: readonly IContactReason[] = [
   { id: 'others', label: 'Others' },
 ];
 
+const NEXT_SLIDE_INTERVAL = 3000; // 3 seconds
+
+interface IBlogPost {
+  title: string;
+  category: string;
+  date: string;
+  dateTime: string;
+  image: string;
+  imageAlt: string;
+  href: string;
+}
+
+const BLOG_POSTS: IBlogPost[] = [
+  {
+    title: 'How Design Shapes Well-Being',
+    category: 'Social Media',
+    date: 'Mar 18, 2025',
+    dateTime: '2025-03-18',
+    image: '/images/flat-1.jpg',
+    imageAlt: 'Building under construction against a clear sky',
+    href: '/blog/how-design-shapes-well-being',
+  },
+  {
+    title: 'Tiny Homes: Big Benefits',
+    category: 'Company',
+    date: 'Mar 18, 2025',
+    dateTime: '2025-03-18',
+    image: '/images/flat-2.jpg',
+    imageAlt: 'Architect working at a desk with building plans',
+    href: '/blog/tiny-homes-big-benefits',
+  },
+  {
+    title: 'Biophilic Design: Bringing Nature Indoors',
+    category: 'Tips & Tricks',
+    date: 'Mar 18, 2025',
+    dateTime: '2025-03-18',
+    image: '/images/flat-3.jpg',
+    imageAlt: 'Brightly colored modern building viewed from below',
+    href: '/blog/biophilic-design',
+  },
+  {
+    title: 'Designing Spaces for Everyday Wellness',
+    category: 'Design',
+    date: 'Mar 18, 2025',
+    dateTime: '2025-03-18',
+    image: '/images/land-1.jpg',
+    imageAlt: 'Sunlit, thoughtfully designed living space',
+    href: '/blog/designing-spaces-for-wellness',
+  },
+  {
+    title: 'Small Spaces, Smarter Living',
+    category: 'Company',
+    date: 'Mar 18, 2025',
+    dateTime: '2025-03-18',
+    image: '/images/land-2.jpg',
+    imageAlt: 'Compact modern home interior',
+    href: '/blog/small-spaces-smarter-living',
+  },
+  {
+    title: 'Nature-Inspired Interiors',
+    category: 'Tips & Tricks',
+    date: 'Mar 18, 2025',
+    dateTime: '2025-03-18',
+    image: '/images/land-3.jpg',
+    imageAlt: 'Interior with natural materials and greenery',
+    href: '/blog/nature-inspired-interiors',
+  },
+];
+
 export {
   type IContactInfo,
   CONTACT_INFO,
@@ -149,4 +221,6 @@ export {
   type WorkProps,
   DEFAULT_CONTACT_REASONS,
   type IContactProps,
+  BLOG_POSTS,
+  NEXT_SLIDE_INTERVAL,
 };

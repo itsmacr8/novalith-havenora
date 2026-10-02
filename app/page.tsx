@@ -1,3 +1,4 @@
+import { Blog } from '@/components/blog/Blog';
 import { Contact } from '@/components/contact/Contact';
 import { Hero } from '@/components/hero/hero';
 import { ServiceCards } from '@/components/service-card/ServiceCard';
@@ -32,6 +33,9 @@ export default function Home() {
         </section>
         <Section>
           <Contact />
+        </Section>
+        <Section>
+          <Blog />
         </Section>
       </main>
     </>
