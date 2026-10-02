@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   /* Primary: Deep Royal Navy (Trust, Stability, Security) */
@@ -25,7 +25,7 @@
   --neutral-0: hsl(0, 0%, 100%);
   --neutral-200: hsl(0, 0%, 88%);
   --neutral-400: hsl(0, 0%, 65%);
-  --spacing: .3125rem
+  --spacing: 0.3125rem;
 }
 
 /* Tailwind v4 Theme Configuration - MUST be at root level */
@@ -52,8 +52,6 @@
   --color-neutral-200: var(--neutral-200);
   --color-neutral-400: var(--neutral-400);
 }
-
-
 
 /*
 ==========================================
@@ -93,3 +91,17 @@ MENU OPEN AND CLOSE ANIMATION
   animation: collapseToTopRight 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
 }
 
+/*
+==========================================
+Hero Section Animations
+==========================================
+*/
+@keyframes hero-background-marquee {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}

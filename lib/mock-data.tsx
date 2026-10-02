@@ -28,9 +28,32 @@ interface INavbarProps {
   readonly navItems?: readonly INavItem[];
 }
 
+type IHeroImages = {
+  buildingImage: {
+    src: string;
+    alt: string;
+  };
+  cloudImages: {
+    first: string;
+    second: string;
+  };
+};
+
+const HERO_IMAGES: IHeroImages = {
+  buildingImage: {
+    src: '/images/hero-building.png',
+    alt: 'Contemporary high-rise apartment building',
+  },
+  cloudImages: {
+    first: '/images/hero-cloud-left.png',
+    second: '/images/hero-cloud-right.png',
+  },
+};
+
 export {
   type IContactInfo,
   CONTACT_INFO,
   type INavbarProps,
   DEFAULT_NAV_ITEMS,
+  HERO_IMAGES,
 };
