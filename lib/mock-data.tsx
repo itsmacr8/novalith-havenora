@@ -122,6 +122,22 @@ const WORKS: IWork[] = [
   },
 ];
 
+interface IContactProps {
+  readonly contactReasons?: readonly IContactReason[];
+}
+
+interface IContactReason {
+  readonly id: string;
+  readonly label: string;
+}
+
+const DEFAULT_CONTACT_REASONS: readonly IContactReason[] = [
+  { id: 'land-buyer', label: 'Land Buyer' },
+  { id: 'apartment-buyer', label: 'Apartment Buyer' },
+  { id: 'general-inquiry', label: 'General Inquiry' },
+  { id: 'others', label: 'Others' },
+];
+
 export {
   type IContactInfo,
   CONTACT_INFO,
@@ -131,4 +147,6 @@ export {
   SERVICES,
   WORKS,
   type WorkProps,
+  DEFAULT_CONTACT_REASONS,
+  type IContactProps,
 };

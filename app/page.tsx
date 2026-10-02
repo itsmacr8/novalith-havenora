@@ -1,3 +1,4 @@
+import { Contact } from '@/components/contact/Contact';
 import { Hero } from '@/components/hero/hero';
 import { ServiceCards } from '@/components/service-card/ServiceCard';
 import { Section } from '@/components/shared/Section';
@@ -29,6 +30,9 @@ export default function Home() {
           />
           <Works works={WORKS} />
         </section>
+        <Section>
+          <Contact />
+        </Section>
       </main>
     </>
   );
