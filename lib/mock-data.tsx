@@ -50,10 +50,39 @@ const HERO_IMAGES: IHeroImages = {
   },
 };
 
+interface IService {
+  id: string;
+  title: string;
+  imageSrc: string;
+  imageAlt: string;
+}
+
+const SERVICES: IService[] = [
+  {
+    id: 'real-estate',
+    title: 'Ready Apartments',
+    imageSrc: '/images/flat.png',
+    imageAlt: 'Explore completed flats available for sale in your preferred area.',
+  },
+  {
+    id: 'project-management',
+    title: 'Shared Land Ownership',
+    imageSrc: '/images/land.png',
+    imageAlt: 'Purchase land with a group and choose whether to build independently or with a developer.',
+  },
+  {
+    id: 'investment',
+    title: 'Land for Sale',
+    imageSrc: '/images/land-share.png',
+    imageAlt: 'Buy land individually or as a group, with no apartment development commitment.',
+  },
+];
+
 export {
   type IContactInfo,
   CONTACT_INFO,
   type INavbarProps,
   DEFAULT_NAV_ITEMS,
   HERO_IMAGES,
+  SERVICES,
 };
