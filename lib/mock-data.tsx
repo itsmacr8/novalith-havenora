@@ -78,6 +78,50 @@ const SERVICES: IService[] = [
   },
 ];
 
+interface IWork {
+  eyebrow: string;
+  title: string;
+  projectType: string;
+  projectName: string;
+  projectHref: string;
+  imageSrc: string;
+  imageAlt: string;
+}
+
+type WorkProps = {
+  works: readonly IWork[];
+};
+
+const WORKS: IWork[] = [
+  {
+    eyebrow: 'Ready Apartments',
+    title: 'Innovative designs, lasting impressions',
+    projectType: 'Architecture',
+    projectName: 'Apartment Building',
+    projectHref: '/projects/apartment-building',
+    imageSrc: '/images/flat-3.jpg',
+    imageAlt: 'Modern apartment building illuminated at dusk',
+  },
+  {
+    eyebrow: 'Shared Land Ownership',
+    title: 'Spaces shaped around the way people live',
+    projectType: 'Residential',
+    projectName: 'Courtyard Residence',
+    projectHref: '/projects/courtyard-residence',
+    imageSrc: '/images/land-2.jpg',
+    imageAlt: 'Contemporary courtyard residence surrounded by greenery',
+  },
+  {
+    eyebrow: 'Land for Sale',
+    title: 'A stronger identity built into every detail',
+    projectType: 'Commercial',
+    projectName: 'Harbour Offices',
+    projectHref: '/projects/harbour-offices',
+    imageSrc: '/images/land-3.jpg',
+    imageAlt: 'Modern commercial building beside a waterfront',
+  },
+];
+
 export {
   type IContactInfo,
   CONTACT_INFO,
@@ -85,4 +129,6 @@ export {
   DEFAULT_NAV_ITEMS,
   HERO_IMAGES,
   SERVICES,
+  WORKS,
+  type WorkProps,
 };

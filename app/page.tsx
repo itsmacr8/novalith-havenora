@@ -2,7 +2,8 @@ import { Hero } from '@/components/hero/hero';
 import { ServiceCards } from '@/components/service-card/ServiceCard';
 import { Section } from '@/components/shared/Section';
 import { SectionIntro } from '@/components/shared/SectionIntro';
-import { HERO_IMAGES } from '@/lib/mock-data';
+import { Works } from '@/components/works/Works';
+import { HERO_IMAGES, WORKS } from '@/lib/mock-data';
 
 export default function Home() {
   return (
@@ -21,6 +22,13 @@ export default function Home() {
           />
           <ServiceCards />
         </Section>
+        <section id='works'>
+          <SectionIntro
+            badgeText='Selected Projects'
+            headingText='Take a brief look at some of the services we offer'
+          />
+          <Works works={WORKS} />
+        </section>
       </main>
     </>
   );
