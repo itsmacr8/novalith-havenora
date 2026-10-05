@@ -168,6 +168,44 @@ const DEFAULT_TESTIMONIALS: ITestimonial[] = [
   },
 ];
 
+interface ITeam {
+  name: string;
+  role: string;
+  image: string;
+  imageAlt: string;
+  placement: 'left' | 'center' | 'right';
+}
+
+const PLACEMENT_CLASSES: Record<ITeam['placement'], string> = {
+  left: '',
+  center: 'md:mt-[1.2rem]',
+  right: '',
+};
+
+const TEAM_MEMBERS: ITeam[] = [
+  {
+    name: 'Esther Howard',
+    role: 'Founder & CEO',
+    image: '/images/team-member-1.jpg',
+    imageAlt: 'Esther Howard, Founder and CEO',
+    placement: 'left',
+  },
+  {
+    name: 'John Smith',
+    role: 'Executive Assistant',
+    image: '/images/team-member-2.jpg',
+    imageAlt: 'John Smith, Executive Assistant',
+    placement: 'center',
+  },
+  {
+    name: 'Michael Johnson',
+    role: 'Director of Architecture',
+    image: '/images/team-member-3.jpg',
+    imageAlt: 'Michael Johnson, Director of Architecture',
+    placement: 'right',
+  },
+];
+
 interface IContactProps {
   readonly contactReasons?: readonly IContactReason[];
 }
@@ -264,6 +302,8 @@ export {
   type WorkProps,
   type TestimonialsProps,
   DEFAULT_TESTIMONIALS,
+  PLACEMENT_CLASSES,
+  TEAM_MEMBERS,
   DEFAULT_CONTACT_REASONS,
   type IContactProps,
   BLOG_POSTS,
