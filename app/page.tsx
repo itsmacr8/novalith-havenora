@@ -4,8 +4,9 @@ import { Hero } from '@/components/hero/hero';
 import { ServiceCards } from '@/components/service-card/ServiceCard';
 import { Section } from '@/components/shared/Section';
 import { SectionIntro } from '@/components/shared/SectionIntro';
+import { Testimonials } from '@/components/testimonials/Testimonials';
 import { Works } from '@/components/works/Works';
-import { HERO_IMAGES, WORKS } from '@/lib/mock-data';
+import { DEFAULT_TESTIMONIALS, HERO_IMAGES, WORKS } from '@/lib/mock-data';
 
 export default function Home() {
   return (
@@ -31,6 +32,13 @@ export default function Home() {
           />
           <Works works={WORKS} />
         </section>
+        <Section>
+          <SectionIntro
+            badgeText='Client Experiences'
+            headingText='Trusted by Buyers'
+          />
+          <Testimonials testimonials={DEFAULT_TESTIMONIALS} />
+        </Section>
         <Section>
           <Contact />
         </Section>

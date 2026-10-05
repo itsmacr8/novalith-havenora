@@ -125,6 +125,49 @@ const WORKS: IWork[] = [
   },
 ];
 
+interface ITestimonial {
+  id: string;
+  quote: string;
+  author: string;
+  title: string;
+  image: string;
+  imageAlt: string;
+}
+
+interface TestimonialsProps {
+  testimonials: ITestimonial[];
+}
+
+const DEFAULT_TESTIMONIALS: ITestimonial[] = [
+  {
+    id: '1',
+    quote:
+      'They knew what they were doing and were incredibly knowledgeable throughout the process. A wonderful!',
+    author: 'Esther Howard',
+    title: 'Assistant Project Manager',
+    image: '/images/team-member-5.jpg',
+    imageAlt: 'Esther Howard',
+  },
+  {
+    id: '2',
+    quote:
+      'Outstanding service and attention to detail. Highly recommend to anyone looking for excellence.',
+    author: 'John Smith',
+    title: 'Product Manager',
+    image: '/images/team-member-6.jpg',
+    imageAlt: 'John Smith',
+  },
+  {
+    id: '3',
+    quote:
+      'Professional, reliable, and exceeded all expectations. Best decision we made.',
+    author: 'Michael Johnson',
+    title: 'Marketing Director',
+    image: '/images/team-member-7.jpg',
+    imageAlt: 'Michael Johnson',
+  },
+];
+
 interface IContactProps {
   readonly contactReasons?: readonly IContactReason[];
 }
@@ -219,6 +262,8 @@ export {
   SERVICES,
   WORKS,
   type WorkProps,
+  type TestimonialsProps,
+  DEFAULT_TESTIMONIALS,
   DEFAULT_CONTACT_REASONS,
   type IContactProps,
   BLOG_POSTS,
