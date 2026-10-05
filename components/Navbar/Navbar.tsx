@@ -47,7 +47,7 @@ function Navbar({
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [isOpen, closeMenu]);
 
-  const sanitizedPhone = phone.replace(/[^0-9+]/g, '');
+  const sanitizedPhone = phone?.replace(/[^0-9+]/g, '');
 
   return (
     <header className='absolute top-0 z-30 w-full bg-primary'>
