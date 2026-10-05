@@ -7,8 +7,8 @@ const DEFAULT_NAV_ITEMS: readonly INavItem[] = [
 
 interface IContactInfo {
   whatsappNumber: string;
-  phoneNumber: string;
-  email: string;
+  phoneNumber?: string;
+  email?: string;
 }
 
 const CONTACT_INFO: IContactInfo = {
