@@ -9,7 +9,13 @@ import { Testimonials } from '@/components/testimonials/Testimonials';
 import { Team } from '@/components/team/Team';
 import { BadgeText } from '@/components/shared/BadgeText';
 import { WhatMakesUsDifferent } from '@/components/team/WhatMakesUsDifferent';
-import { DEFAULT_REVIEWERS, DEFAULT_TESTIMONIALS, HERO_IMAGES, WORKS } from '@/lib/mock-data';
+import {
+  DEFAULT_REVIEWERS,
+  DEFAULT_TESTIMONIALS,
+  HERO_IMAGES,
+  WORKS,
+} from '@/lib/mock-data';
+import { Footer } from '@/components/Footer/Footer';
 
 export default function Home() {
   return (
@@ -63,6 +69,12 @@ export default function Home() {
           <Blog />
         </Section>
       </main>
+      <footer
+        aria-labelledby='dream-home-title'
+        className='relative isolate grid place-items-center overflow-hidden bg-primary-darker text-neutral-0'
+      >
+        <Footer />
+      </footer>
     </>
   );
 }

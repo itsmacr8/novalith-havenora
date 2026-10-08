@@ -5,6 +5,22 @@ const DEFAULT_NAV_ITEMS: readonly INavItem[] = [
   { id: 'contact', label: 'Contact', href: '/contact' },
 ];
 
+interface ICompany {
+  name: string;
+  logo: string;
+  whatsappNumber: string;
+  phoneNumber: string;
+  email: string;
+}
+
+const COMPANY: ICompany = {
+  name: 'ITS MAC',
+  logo: '/images/flat-1.jpg',
+  whatsappNumber: '+8801871******',
+  phoneNumber: '+8801871******',
+  email: 'its@mac.com',
+};
+
 interface IContactInfo {
   whatsappNumber: string;
   phoneNumber?: string;
@@ -359,7 +375,38 @@ const BLOG_POSTS: IBlogPost[] = [
   },
 ];
 
+import { type LinkProps } from 'next/link';
+
+interface IFooterLink {
+  label: string;
+  href: LinkProps['href'];
+}
+
+const FIRST_LINK_GROUP: IFooterLink[] = [
+  { label: 'About Us', href: '/about' },
+  { label: 'Why Choose Us', href: '/why-choose-us' },
+  { label: 'Our Team', href: '/team' },
+  { label: 'Solutions', href: '/solutions' },
+  { label: 'Partners', href: '/partners' },
+  { label: 'Core Values', href: '/core-values' },
+];
+
+const SECOND_LINK_GROUP: IFooterLink[] = [
+  { label: 'Our Projects', href: '/projects' },
+  { label: 'News & Updates', href: '/news' },
+  { label: 'Terms & Conditions', href: '/terms' },
+  { label: 'Support Center', href: '/support' },
+  { label: 'Contact', href: '/contact' },
+];
+
+const SOCIAL_LINKS: IFooterLink[] = [
+  { label: 'Facebook', href: 'https://facebook.com' },
+  { label: 'Instagram', href: 'https://instagram.com' },
+  { label: 'Youtube', href: 'https://youtube.com' },
+];
+
 export {
+  COMPANY,
   type IContactInfo,
   CONTACT_INFO,
   type INavbarProps,
@@ -380,4 +427,7 @@ export {
   type IContactProps,
   BLOG_POSTS,
   NEXT_SLIDE_INTERVAL,
+  FIRST_LINK_GROUP,
+  SECOND_LINK_GROUP,
+  SOCIAL_LINKS,
 };
