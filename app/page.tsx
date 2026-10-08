@@ -7,7 +7,9 @@ import { SectionIntro } from '@/components/shared/SectionIntro';
 import { Works } from '@/components/works/Works';
 import { Testimonials } from '@/components/testimonials/Testimonials';
 import { Team } from '@/components/team/Team';
-import { DEFAULT_TESTIMONIALS, HERO_IMAGES, WORKS } from '@/lib/mock-data';
+import { BadgeText } from '@/components/shared/BadgeText';
+import { WhatMakesUsDifferent } from '@/components/team/WhatMakesUsDifferent';
+import { DEFAULT_REVIEWERS, DEFAULT_TESTIMONIALS, HERO_IMAGES, WORKS } from '@/lib/mock-data';
 
 export default function Home() {
   return (
@@ -33,6 +35,13 @@ export default function Home() {
           />
           <Works works={WORKS} />
         </section>
+        <Section
+          aria-labelledby='what-makes-us-different-heading'
+          className='text-primary-darker'
+        >
+          <BadgeText badgeText='Our Commitment' className='mx-auto' />
+          <WhatMakesUsDifferent reviewers={DEFAULT_REVIEWERS} />
+        </Section>
         <Section>
           <SectionIntro
             badgeText='Client Experiences'

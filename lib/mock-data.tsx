@@ -125,6 +125,74 @@ const WORKS: IWork[] = [
   },
 ];
 
+import type { ReactNode } from 'react';
+
+type BenefitIconKind = 'responsibility' | 'expertise' | 'diversity';
+
+interface IBenefit {
+  icon: BenefitIconKind;
+  title: ReactNode;
+  description: string;
+}
+
+const BENEFITS: IBenefit[] = [
+  {
+    icon: 'responsibility',
+    title: (
+      <>
+        Corporate
+        <br />
+        Responsibility
+      </>
+    ),
+    description:
+      'Our goal is to foster a culture of responsible business practices and healthy communities.',
+  },
+  {
+    icon: 'expertise',
+    title: (
+      <>
+        Experts with
+        <br />
+        Team Spirit
+      </>
+    ),
+    description:
+      'Our small but dedicated practice is focused on modern thinking and delivering solutions.',
+  },
+  {
+    icon: 'diversity',
+    title: (
+      <>
+        Diversity, Equity &<br />
+        Inclusion
+      </>
+    ),
+    description:
+      'We work with diverse women entrepreneurs to create a more diverse, equitable and inclusive community.',
+  },
+];
+
+interface IBenefitIconProps {
+  kind: BenefitIconKind;
+}
+
+interface IReviewer {
+  src: string;
+  alt: string;
+}
+
+const DEFAULT_REVIEWERS: IReviewer[] = [
+  { src: '/images/flat-1.jpg', alt: 'Customer' },
+  { src: '/images/flat-2.jpg', alt: 'Customer' },
+  { src: '/images/flat-3.jpg', alt: 'Customer' },
+  { src: '/images/flat-1.jpg', alt: 'Customer' },
+];
+
+interface IWhatMakesUsDifferentProps {
+  reviewers?: IReviewer[];
+}
+
 interface ITestimonial {
   id: string;
   quote: string;
@@ -300,6 +368,10 @@ export {
   SERVICES,
   WORKS,
   type WorkProps,
+  DEFAULT_REVIEWERS,
+  type IBenefitIconProps,
+  type IWhatMakesUsDifferentProps,
+  BENEFITS,
   type TestimonialsProps,
   DEFAULT_TESTIMONIALS,
   PLACEMENT_CLASSES,
