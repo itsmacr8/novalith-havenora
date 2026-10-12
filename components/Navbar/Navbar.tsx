@@ -92,7 +92,7 @@ function Navbar({
           aria-label='Menu'
           role='dialog'
           aria-modal='true'
-          className={`fixed inset-0 z-50 flex flex-col justify-between bg-(--bg-menu) px-6 py-4 text-(--text-menu) ${
+          className={`fixed inset-0 z-50 flex flex-col justify-between bg-primary px-6 py-4 ${
             isOpen ? 'animate-expand-top-right' : 'animate-collapse-top-right'
           }`}
         >
