@@ -4,7 +4,7 @@ import Image from 'next/image';
 function Team() {
   return (
     <>
-      <div className='grid grid-cols-[repeat(auto-fit,minmax(10rem,1fr))] gap-2'>
+      <div className='grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-2'>
         {TEAM_MEMBERS.map((member) => (
           <article
             key={member.name}
@@ -25,7 +25,7 @@ function Team() {
 
             <div
               className={
-                'z-10 -mt-4 grid place-content-center min-h-8 rounded-lg px-2 py-2 bg-primary text-accent-lighter'
+                'z-10 -mt-8 grid place-content-center min-h-8 rounded-lg px-2 py-2 bg-primary text-accent-lighter'
               }
             >
               <p className='m-0 uppercase'>{member.role}</p>

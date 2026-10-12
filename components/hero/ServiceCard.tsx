@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 function ServiceCards() {
   return (
-    <div className='grid grid-cols-[repeat(auto-fit,minmax(10rem,1fr))] gap-2'>
+    <div className='grid grid-cols-[repeat(auto-fit,minmax(20rem,1fr))] gap-2'>
       {SERVICES.map((service) => (
         <article
           key={service.id}

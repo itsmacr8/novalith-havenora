@@ -6,8 +6,7 @@ import { useEffect, useRef, useState } from 'react';
 import type { FocusEvent } from 'react';
 import { BadgeText } from './BadgeText';
 import { SectionHeading } from './SectionHeading';
-
-const NEXT_SLIDE_INTERVAL = 3000; // 3 seconds
+import { NEXT_SLIDE_INTERVAL } from '@/lib/mock-data';
 
 interface IBlogPost {
   title: string;

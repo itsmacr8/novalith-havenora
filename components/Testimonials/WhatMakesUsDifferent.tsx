@@ -86,8 +86,7 @@ function WhatMakesUsDifferent({ reviewers }: IWhatMakesUsDifferentProps) {
           id='what-makes-us-different-heading'
           className='text-h2 font-bold leading-[1.08] text-primary-darker'
         >
-          What makes us
-          <br className='hidden sm:block' /> different
+          What makes us different
         </h2>
 
         <p className='text-small mb-5 mt-3 max-w-xl leading-relaxed text-primary-dark'>

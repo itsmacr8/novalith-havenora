@@ -14,7 +14,7 @@ function FooterLinks({}) {
     <div className='relative isolate overflow-hidden px-3 pt-12 pb-5 text-primary-darker'>
       <span
         aria-hidden='true'
-        className='pointer-events-none absolute top-1 right-3 sm:-top-6 sm:right-10 lg:-top-8 lg:right-4 z-20 text-[clamp(4.5rem,20vw,16rem)] font-extrabold text-neutral-0/30 block leading-none'
+        className='pointer-events-none absolute top-1 right-10 sm:-top-6 sm:right-22 lg:-top-8 lg:right-4 z-20 text-[clamp(4.5rem,20vw,13rem)] font-extrabold text-neutral-0/30 block leading-none'
       >
         {COMPANY.name}
       </span>

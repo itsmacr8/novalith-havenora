@@ -35,7 +35,7 @@ function HomePage() {
           />
           <ServiceCards />
         </Section>
-        <section>
+        <section id='works'>
           <SectionIntro
             badgeText='Selected Projects'
             headingText='Take a brief look at some of the services we offer'
@@ -60,7 +60,7 @@ function HomePage() {
           /> */}
           <SectionIntro
             badgeText='Client Experiences'
-            headingText='Trusted by Visionary Buyers & Investors'
+            headingText='Trusted by Buyers'
           />
           <Testimonials testimonials={DEFAULT_TESTIMONIALS} />
         </Section>

@@ -583,6 +583,8 @@ const BOTTOM_NAV_LINKS: IBottomNavLinks[] = [
 ];
 
 // new
+const NEXT_SLIDE_INTERVAL = 3000; // 3 seconds
+
 type IHeroImages = {
   buildingImage: {
     src: string;
@@ -621,7 +623,7 @@ type WorkProps = {
 
 const WORKS: IWork[] = [
   {
-    eyebrow: 'Civic',
+    eyebrow: 'Ready Apartments',
     title: 'Innovative designs, lasting impressions',
     projectType: 'Architecture',
     projectName: 'Apartment Building',
@@ -630,7 +632,7 @@ const WORKS: IWork[] = [
     imageAlt: 'Modern apartment building illuminated at dusk',
   },
   {
-    eyebrow: 'Residential',
+    eyebrow: 'Shared Land Ownership',
     title: 'Spaces shaped around the way people live',
     projectType: 'Residential',
     projectName: 'Courtyard Residence',
@@ -639,7 +641,7 @@ const WORKS: IWork[] = [
     imageAlt: 'Contemporary courtyard residence surrounded by greenery',
   },
   {
-    eyebrow: 'Commercial',
+    eyebrow: 'Land for Sale',
     title: 'A stronger identity built into every detail',
     projectType: 'Commercial',
     projectName: 'Harbour Offices',
@@ -652,21 +654,21 @@ const WORKS: IWork[] = [
 const SERVICES = [
   {
     id: 'real-estate',
-    title: 'Real Estate Development',
+    title: 'Ready Apartments',
     imageSrc: '/images/flat.png',
-    imageAlt: 'Real Estate Development',
+    imageAlt: 'Explore completed flats available for sale in your preferred area.',
   },
   {
     id: 'project-management',
-    title: 'Project Management',
+    title: 'Shared Land Ownership',
     imageSrc: '/images/land.png',
-    imageAlt: 'Project Management',
+    imageAlt: 'Purchase land with a group and choose whether to build independently or with a developer.',
   },
   {
     id: 'investment',
-    title: 'Investment & Capital',
+    title: 'Land for Sale',
     imageSrc: '/images/land-share.png',
-    imageAlt: 'Investment and Capital',
+    imageAlt: 'Buy land individually or as a group, with no apartment development commitment.',
   },
 ];
 
@@ -870,6 +872,7 @@ export {
   DEFAULT_CONTACT_REASONS,
   BOTTOM_NAV_LINKS,
   type IBottomNavLinksProps,
+  NEXT_SLIDE_INTERVAL,
   type IHeroImages,
   HERO_IMAGES,
   WORKS,

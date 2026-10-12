@@ -94,7 +94,8 @@ function Hero({ buildingImage, cloudImages }: IHeroImages) {
     <>
       <div className='sticky top-0 isolate h-[60svh] sm:h-svh overflow-hidden bg-primary-light'>
         {/* Hero text */}
-        <div className='absolute left-8 top-20 sm:top-30 z-40 sm:w-[min(20rem,50vw)] text-center sm:text-left'>
+        {/* <div className='absolute left-8 top-20 sm:top-30 z-40 sm:w-[min(20rem,50vw)] text-center sm:text-left'> */}
+        <div className='absolute top-20 sm:top-30 sm:left-8 z-40 sm:w-[min(20rem,50vw)] text-center sm:text-left px-2'>
           <p className='text-small leading-[1.15] mb-2'>
             We are a developer invested in our customers&apos; success and
             improving the communities where we serve.
