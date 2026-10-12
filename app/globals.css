@@ -51,6 +51,14 @@
   --color-neutral-0: var(--neutral-0);
   --color-neutral-200: var(--neutral-200);
   --color-neutral-400: var(--neutral-400);
+
+    --animate-marquee: marquee 5s linear infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 /*
